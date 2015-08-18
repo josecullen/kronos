@@ -1,0 +1,29 @@
+extends map-layout
+
+block content
+  div(id="map" class="map")   
+    script(type="text/javascript" src="/javascripts/ol.js")    
+    script(type="text/javascript").	  
+      var osmLayer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var birmingham = ol.proj.transform([-1.81185, 52.44314], 'EPSG:4326', 'EPSG:3857');      
+      var view = new ol.View({      
+        center: birmingham,
+        zoom: 1
+      });
+      var map = new ol.Map({
+      //	renderer: 'dom',
+        target: 'map',
+       // layers: [osmLayer],
+        view: view
+      });     
+
+      // '/images/osm/{z}/{x}/{y}.png'
+      var newLayer = new ol.layer.Tile({
+        source: new ol.source.OSM({
+          url: '/images/watercolor/{z}/{x}/{y}.png'
+        })
+      });
+      map.addLayer(newLayer);
+	

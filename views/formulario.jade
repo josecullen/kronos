@@ -1,0 +1,40 @@
+extends normal-layout
+
+block content
+  form(action="/db/add" method="GET" class="navbar-form navbar-left")
+    div(class="input-group" style="width:100%")    
+      span(class="input-group-addon" id="basic-addon1" ) Titulo
+      input(type="text" name="titulo" class="form-control" placeholder="Batalla de San Lorenzo" aria-describedby="basic-addon1")
+    p
+    div(class="input-group" style="width:100%")    
+      span(class="input-group-addon" id="basic-addon1") Fecha
+      input(type="date" name="fecha" class="form-control" placeholder="" aria-describedby="basic-addon1")
+    p
+    div(class="input-group")    
+      span(class="input-group-addon" id="basic-addon1") Coordenadas
+      input(type="number" name="coordenadaX" step="0.01" class="form-control" placeholder="37,35" aria-describedby="basic-addon1")
+      span(class="input-group-addon" id="basic-addon1") x
+      input(type="number" name="coordenadaY" step="0.01" class="form-control" placeholder="15,48" aria-describedby="basic-addon1")
+      span(class="input-group-addon" id="basic-addon1") y
+    p
+    div(class="input-group" style="width:100%")    
+      span(class="input-group-addon" id="basic-addon1") Contenido
+      textarea(class="form-control" name="contenido" rows="8" aria-describedby="basic-addon1")
+    p
+    div(class="input-group" style="width:100%")    
+      span(class="input-group-addon" id="basic-addon1") Contenido
+      div(class="dropdown")
+        button(type="button" name="categoria" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" ) Categoría 
+          span(class="caret")  
+        ul(class="dropdown-menu")
+          li
+            a(href="#") Historia
+          li
+            a(href="#") Música
+          li
+            a(href="#") Geografía
+    p
+    button(type="submit" class="btn btn-default") Submit
+
+
+

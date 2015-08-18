@@ -1,0 +1,3 @@
+{"k":"0000000078","o":"0000000157","v":"001"}
+{"_id":2,"_uid":2,"_dt":1439843543679,"_s":"ebd78a6eddb1b42864735cb675af191f"}
+{"titulo":"Batalla de San Lorenzo","fecha":"2015-08-17","contenido":"Contenido que hay que meter","coordenadas":["35.5","13.1"],"_id":{"$wrap":"$oid","v":2}}
