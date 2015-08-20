@@ -26,9 +26,10 @@ router.get('/add', function(req, res, next) {
 		}else{
 			res.send('ok');	
 		}
+	  	db.close();
 	});
-
 });
+
 
 
 var instertOne = function(query, callback){
@@ -42,7 +43,7 @@ var instertOne = function(query, callback){
 	
 	console.log(titulo+" "+fecha+" "+contenido+" "+coordenadaY+" "+coordenadaX);
 	
-	collectionAcont.insert(
+	collection().insert(
   		{
   			titulo : titulo, 
   			fecha : fecha, 
@@ -56,6 +57,9 @@ var instertOne = function(query, callback){
   		}
   	);
 }
-
+var collection = function(){
+	collectionAcont = db.collection('acontecimiento');
+	return collectionAcont;
+}
 
 module.exports = router;

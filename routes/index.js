@@ -1,5 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var Engine = require('tingodb')(),
+    assert = require('assert');
+var db = new Engine.Db('./db', {});
+
+var fs = require('fs');
+var collectionAcont = db.collection('acontecimiento');
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,18 +17,31 @@ router.get('/map', function(req, res, next) {
   res.sendFile('views/map.html', {root: __dirname });
 });
 
-router.post('/add', function(req, res, next) {
-	var query = url.parse(req.url).query;
-	var titulo = querystring.parse(query)["titulo"];    
-	var fecha = querystring.parse(query)["fecha"];    
-	var contenido = querystring.parse(query)["contenido"];   
-	var categoria = querystring.parse(query)["categoria"];    
- 
-	var coordenadaX = querystring.parse(query)["coordenadaX"];    
-	var coordenadaY = querystring.parse(query)["coordenadaY"];    
-
-	console.log(titulo+" "+fecha+" "+contenido+" "+coordenadaY+" "+coordenadaX);
-	res.send('hola');
+router.get('/mapWithAll', function(req, res, next) {
+	findAll(function(allAcont){
+		res.render('mapWithAll', {allAcont : JSON.stringify(allAcont)});
+   		db.close();
+	});
 });
 
+
+var findAll = function(callback){
+  var cursor = collection().find();
+  var allAcont = new Array();
+  cursor.each(function(err, doc){
+  	console.log(err);
+  	assert.equal(err, null);
+  	if(doc != null){
+  		console.dir(doc);
+  		allAcont.push(doc);
+  	}else{
+  		callback(allAcont);
+  	}
+  });
+}
+
+var collection = function(){
+	collectionAcont = db.collection('acontecimiento');
+	return collectionAcont;
+}
 module.exports = router;

@@ -1,3 +1,21 @@
-{"k":"0000000078","o":"0000000157","v":"001"}
-{"_id":2,"_uid":2,"_dt":1439843543679,"_s":"ebd78a6eddb1b42864735cb675af191f"}
-{"titulo":"Batalla de San Lorenzo","fecha":"2015-08-17","contenido":"Contenido que hay que meter","coordenadas":["35.5","13.1"],"_id":{"$wrap":"$oid","v":2}}
+{"k":"0000000078","o":"0000000203","v":"001"}
+{"_id":2,"_uid":2,"_dt":1440016280597,"_s":"76a0a071999c42fd188246670de1e6a3"}
+{"titulo":"Beethoven compone la Sinfonía La Heroica","fecha":"1804-01-01","contenido":"Napoleón Bonaparte es declarado Emperador de Francia","coordenadas":["9.17","45.33"],"_id":{"$wrap":"$oid","v":2}}
+{"k":"0000000078","o":"0000000215","v":"001"}
+{"_id":3,"_uid":3,"_dt":1440016306095,"_s":"1f8176ece167935f86191ac1ef2c2a8e"}
+{"titulo":"Napoleón Bonaparte es declarado Emperador de Francia","fecha":"1804-01-01","contenido":"Napoleón Bonaparte es declarado Emperador de Francia","coordenadas":["2.08","48.66"],"_id":{"$wrap":"$oid","v":3}}
+{"k":"0000000078","o":"0000000204","v":"001"}
+{"_id":4,"_uid":4,"_dt":1440016345190,"_s":"43e2772e656f05886401d43673080fd7"}
+{"titulo":"John Dalton formula  la primer teoría atómica","fecha":"1803-01-01","contenido":"John Dalton formula  la primer teoría atómica","coordenadas":["-2.34","54.16"],"_id":{"$wrap":"$oid","v":4}}
+{"k":"0000000078","o":"0000000192","v":"001"}
+{"_id":5,"_uid":5,"_dt":1440016382800,"_s":"22d986b944a38041fec05bb8d0c4fa25"}
+{"titulo":"Inglaterra le declara la guerra a Francia","fecha":"1803-01-01","contenido":"Inglaterra le declara la guerra a Francia","coordenadas":["-0.12","51.50"],"_id":{"$wrap":"$oid","v":5}}
+{"k":"0000000078","o":"0000000192","v":"001"}
+{"_id":6,"_uid":6,"_dt":1440016419994,"_s":"d001aa1142911a674d2a32966d17b88c"}
+{"titulo":"Tratado de paz entre España e Inglaterra","fecha":"1802-01-01","contenido":"Tratado de paz entre España e Inglaterra","coordenadas":["-3.22","42.48"],"_id":{"$wrap":"$oid","v":6}}
+{"k":"0000000078","o":"0000000128","v":"001"}
+{"_id":7,"_uid":7,"_dt":1440028137836,"_s":"56152535058f6a56febb7a455d375177"}
+{"titulo":"Tal cosa","fecha":"1802-01-01","contenido":"Tal cosa","coordenadas":["-60.73","-32.87"],"_id":{"$wrap":"$oid","v":7}}
+{"k":"0000000078","o":"0000000169","v":"001"}
+{"_id":8,"_uid":8,"_dt":1440076242409,"_s":"1e15bfa1ed3d78ce48ac0827b10fb1c7"}
+{"titulo":"Revolución de Estados Unidos","fecha":"1807-10-05","contenido":"Revolución de Estados Unidos","coordenadas":["-79.45","33.70"],"_id":{"$wrap":"$oid","v":8}}
